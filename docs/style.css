@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --form-input-width: 250px;
+    --form-input-height: 35px;
+    --red-white: rgba(255, 250, 250, 1);
+  
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    background-image: url('https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 90vh;
+  }
+  
+  nav {
+    height: 40px;
+    position: relative;
+    border-bottom: var(--red-white) 1px solid;
+  }
+  nav > ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  nav > ul > li {
+    margin: 10px 15px;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: var(--red-white);
+    font: 1.05em ;
+    font-family: 'Brush Script MT', cursive;
+  }
+  nav > ul > li > a:hover{
+    font-size: 1.09em;
+  }
+  
+  main {
+    margin: 0 5vw;
+    width: fit-content;
+    position: relative;
+    float: right;
+  }
+  
+  .form-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    color: var(--red-white);
+  }
+  
+  form {
+    width: fit-content;
+  }
+  
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: fit-content;
+  }
+  
+  [type='text'],
+  [type='email'],
+  [for='birthday'] {
+    font-family: sans-serif, Tahoma;
+  }
+  
+  [type='text'],
+  [type='email'] {
+    margin: 0;
+    border: none;
+    padding: 2px 10px;
+    font-size: .9em;
+    position: relative;
+    background-color: transparent;
+    color: var(--red-white);
+    /* backdrop-filter: opacity(.25); */
+  }
+  
+  [type='text']::placeholder,
+  [type='email']::placeholder {
+    color: var(--red-white);
+  }
+  
+  .underlay {
+    position: absolute;
+    /* filter: opacaity(.25); */
+  }
+  
+  .main-underlay {
+    background-color: #333;
+    opacity: .55;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+  }
+  
+  .form-input-underlay {
+    background-color: #CCC;
+    opacity: .25;
+    padding: 2px 10px;
+  }
+  
+  [type='text'],
+  [type='email'],
+  .form-input-underlay {
+    border-radius: 30px;
+    width: var(--form-input-width);
+    height: var(--form-input-height);
+  }
+  
+  [type='text']:focus,
+  [type='email']:focus {
+    /* vs blur */
+    outline: none;
+  }
+  
+  section {
+    /* nth-child(odd / even) */
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  
+  section:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* جلسه 2 */
+  input:focus::placeholder {
+    color: transparent;
+  }
+  
+  .birthday {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  
+  input[type="date"] {
+    width:185px;
+    height: 22px;
+    background-color: rgb(135, 99, 104);
+    padding: 5px;
+    font-family: sans-serif, Tahoma;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  ::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    width: 250PX;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: auto;
+    text-transform: lowercase;
+  }
+  input[type="submit"]:not(:first-child) {
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-image: linear-gradient(#444, #111);
+    letter-spacing: 0.15em ;
+    box-shadow: 0 0 3px 2px #BBB;
+    transform: scale(1.05);
+    text-transform: uppercase;
+    color: var(--red-white);
+  }
+  
+  input[type="submit"]:focus {
+    background-image: linear-gradient(#111, #444);
+    box-shadow: none;
+    transform: scale(1);
+    letter-spacing: 0.15em ;
+    text-transform: uppercase;
+    color: var(--red-white);
+  }
+  /* جلسه 3 */
+  .text{
+    color: var(--red-white);
+    width: 40%;
+    height: fit-content;
+    padding: 20px;
+    background-color:rgba(152, 109, 111, 0.475) ;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+  }
+  .text:hover{
+    box-shadow: 0 0 3px 2px #BBB;
+    transform: scale(1.001);
+    color: var(--red-white);
+  }
+  .text h1{
+    font-family: 'Brush Script MT', cursive;
+    margin: 10px;
+  }
+  .text p{
+    line-height: 18px;
+    margin: 10px;
+  }
+  footer {
+    width: 100%;
+    position: relative;
+    height: 5vh;
+  }
+  footer > p {
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .items-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+  .card {
+    width: 30.333%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background: blue;
+    float: left;
+  }
+  .item-p {
+    margin: 0;
+    padding: 0;
+  }
