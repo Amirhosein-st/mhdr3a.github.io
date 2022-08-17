@@ -2,85 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ServerSite</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ServerSite</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li class="logoimg"><img src="pics/logo.png" alt=""> </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">More</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1 class="form-title">Login</h1>
-      <form action="">
-        <fieldset>
-          <section>
-            <input type="text" id="fname" name="fname" placeholder="First Name">
-          </section>
-          <section>
-            <input type="text" id="lname" name="lname" placeholder="Last Name">
-          </section>
-          <section>
-            <input type="email" id="email" name="email" placeholder="Email">
-          </section>
-          <section class="birthday">
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
-          </section>
-          <section class="bottom">
-            <input type="submit" value="Log in">
-            <input type="submit" value="Sign up">
-            <input type="submit" value="Forget password">
-          </section>
-        </fieldset>
-      </form>
-    </main>
-    <div class="text">
-      <h1>About Us</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos veritatis natus, praesentium vel
-        voluptatibus sed quidem, fugiat doloribus distinctio quos, numquam cumque officia! Quas commodi soluta aliquam
-        neque culpa?
-        <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem, consequatur sunt eveniet vel quia
-        maxime! Harum tenetur excepturi repellat. Quis expedita eveniet itaque quae explicabo officiis in corporis?
-        Repudiandae!
-        <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem, consequatur sunt eveniet vel quia
-        maxime! Harum tenetur excepturi repellat. Quis expedita eveniet itaque quae explicabo officiis in corporis?
-        Repudiandae!
-      </p>
-    </div>
-  </header>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logoimg"><img src="pics/logo.png" alt=""> </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
 
-  <div class="grid-container">
-    <div class="grid-item grid-item-1">Grid Item 1</div>
-    <div class="grid-item grid-item-2"> GRID ITEM 2
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quae libero porro amet ex rerum dolores sapiente iusto ab provident dolore dolorum iure nobis minima maxime aspernatur, illum excepturi beatae repellat consectetur harum quisquam doloremque obcaecati. Quae eos, nobis, quaerat necessitatibus eaque dolor fugit modi consequuntur autem, deleniti ratione tempora.
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-input">
+                <div id="sidebar-menu">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
+            </label>
+            <div class="overlay"></div>
+        </nav>
+        <main>
+            <h1 class="form-title">Login</h1>
+            <form action="">
+                <fieldset>
+                    <section>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                    </section>
+                    <section>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </section>
+                    <section>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </section>
+                    <section class="birthday">
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </section>
+                    <section class="bottom">
+                        <input type="submit" value="Log in">
+                        <input type="submit" value="Sign up">
+                        <input type="submit" value="Forget password">
+                    </section>
+                </fieldset>
+            </form>
+        </main>
+        <div class="text">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos veritatis natus, praesentium vel
+                voluptatibus sed quidem, fugiat doloribus distinctio quos, numquam cumque officia! Quas commodi soluta
+                aliquam
+                neque culpa?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem, consequatur sunt eveniet vel
+                quia
+                maxime! Harum tenetur excepturi repellat. Quis expedita eveniet itaque quae explicabo officiis in
+                corporis?
+                Repudiandae!
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem, consequatur sunt eveniet vel
+                quia
+                maxime! Harum tenetur excepturi repellat. Quis expedita eveniet itaque quae explicabo officiis in
+                corporis?
+                Repudiandae!
+            </p>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">Grid Item 1 </div>
+        <div class="grid-item grid-item-2"> GRID ITEM 2 </div>
+        <div class="grid-item grid-item-3">Grid Item 3 </div>
+        <div class="grid-item grid-item-4">Grid Item 4 </div>
+        <div class="grid-item grid-item-5">Grid Item 5 </div>
+        <div class="grid-item grid-item-6"> Grid Item 6 </div>
+        <div class="grid-item grid-item-7"> Grid Item 7 </div>
+        <div class="grid-item grid-item-8">Grid Item 8 </div>
+        <div class="grid-item grid-item-9">Grid Item 9 </div>
     </div>
-    <div class="grid-item grid-item-3">Grid Item 3</div>
-    <div class="grid-item grid-item-4">Grid Item 4</div>
-    <div class="grid-item grid-item-5">Grid Item 5</div>
-    <div class="grid-item grid-item-6">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure labore fugit maxime blanditiis sit ipsa ut incidunt, perspiciatis, aperiam quod distinctio modi esse reprehenderit!
-    </div>
-    <div class="grid-item grid-item-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod eius adipisci a nulla. Nisi recusandae, minima quos deleniti quasi perspiciatis, illum dolorum, enim tenetur totam laborum tempora ab amet dolor ad. Dicta, repellendus aspernatur aliquid ex eum necessitatibus mollitia minima, error numquam hic quia nisi reprehenderit! Quis nobis optio in doloribus iure illo eveniet laborum, officiis, cumque molestiae labore tempore veniam distinctio provident quae aut aperiam. Accusamus aliquid neque molestias ratione earum rem quisquam necessitatibus harum nobis fugiat optio officiis sit asperiores a sed dicta labore nam praesentium, est cum voluptates nihil pariatur! Similique et sed exercitationem vitae expedita dolor cupiditate non qui perferendis eos aut, error vero, deserunt itaque nobis! Iusto, modi delectus? Esse tempore libero impedit recusandae unde perspiciatis nulla dignissimos, veritatis, necessitatibus deleniti ex molestias. Similique voluptatum incidunt doloremque odio nobis excepturi? Itaque reprehenderit, sapiente exercitationem quisquam non quas expedita esse autem deleniti. Modi facere veniam, temporibus doloribus sunt ea id autem molestias, quidem, alias error! Perspiciatis optio architecto quisquam libero quidem amet aliquam neque dicta officia molestiae voluptatibus non, minus animi excepturi debitis, voluptas voluptates perferendis? Illum dicta inventore officia, reiciendis dolorem alias eaque placeat voluptatibus accusantium veritatis assumenda quod ea aliquam dolores, incidunt unde quae, ducimus ut ratione doloremque. Quisquam facilis repellendus possimus et corporis nulla illum numquam repellat hic, est dolor, molestias rem odit eos? Blanditiis eum quasi accusantium, quae possimus voluptatibus nesciunt earum neque ab facilis consectetur, maxime porro pariatur deserunt! Repellendus illo autem modi laudantium, fuga accusamus quae ducimus explicabo eveniet!</div>
-    <div class="grid-item grid-item-8">Grid Item 8</div>
-    <div class="grid-item grid-item-9">Grid Item 9</div>
-  </div>
-  
-  <footer>
-    <p>1401 karyar</p>
-  </footer>
+
+    <footer>
+        <p>1401 karyar</p>
+    </footer>
 </body>
 
 </html>
